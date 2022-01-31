@@ -54,3 +54,57 @@ const nestedObjects = {
     },
 };
 
+// Select the article tag
+// Create a ul tag using JavaScript
+// Loop the array
+// Create a li tag using JavaScript
+// Add the items int the array to the inner html of this tag
+// Add all the new tags in the parent(ul) tag
+// Add everything in the article tag ul >> inside the article tag
+
+const article = document.querySelector("article");
+console.log(article);
+
+let stuffList = document.createElement("ul");
+
+// for (let i = 0; i < stuff.length; i++) {
+//     let listItem = document.createElement("li");
+//     listItem.innerHTML = stuff[i];
+//     stuffList.append(listItem);
+// }
+
+// Item of array = for of loop
+
+// for (const item of stuff) {
+//     let listItem = document.createElement("li");
+//     listItem.innerHTML = item;
+//     stuffList.append(listItem);
+// }
+
+// for each loop
+
+// stuff.forEach(function (item) {
+//     console.log(stuff);
+//     let listItem = document.createElement("li");
+//     listItem.innerHTML = item;
+//     stuffList.append(listItem);
+// });
+
+// Using the Arrow function
+stuff.forEach((item) => {
+    let listItem = document.createElement("li");
+    listItem.innerHTML = item;
+    stuffList.append(listItem);
+});
+
+
+// for in loop on an Object
+
+for (const singleItem in nestedObjects) {
+    let listItem = document.createElement("li");
+    console.log(nestedObjects[singleItem].name);
+    listItem.innerHTML = `Name: ${nestedObjects[singleItem].name}`;
+    stuffList.append(listItem);
+}
+
+article.append(stuffList);
