@@ -71,4 +71,11 @@ function hoverDataAnimal(event) {
     console.log(event.target.dataset.animal);
 }
 
-// extends
+const containerDiv = document.querySelector(".container");
+
+function updateDivAfterTwoSeconds() {
+    containerDiv.innerHTML = "Hello I'm updated";
+}
+
+setTimeout(function () {
+}, 2000);

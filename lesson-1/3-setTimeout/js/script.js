@@ -15,3 +15,4 @@ setTimeout(function () {
     loading.innerHTML = "Finished downloading!";
 }, 5000);
 
+

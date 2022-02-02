@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>SetInterval</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>onkeyup</title>
     <script src="js/script.js" defer></script>
-    <!--    defer. This Boolean attribute is set to indicate to -->
-    <!--    a browser that the script is meant to be executed after-->
-    <!--    the document has been parsed, but before firing DOMContentLoaded .-->
-    <!--    Scripts with the defer attribute will prevent the -->
-    <!--    DOMContentLoaded event from firing until the script has-->
-    <!--    loaded and finished evaluating-->
-</head>
-<body>
-<main>
-    <h1>Learning SetInterval method</h1>
-
-    <ul class="container"></ul>
-</main>
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <p>Your message must be min of 5 characters</p>
+        <label>
+          <textarea placeholder="Enter Your Message"></textarea>
+        </label>
+        <div class="character-count">Characters count : <span>0</span></div>
+        <div>
+          <button type="submit" disabled>Send</button>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>

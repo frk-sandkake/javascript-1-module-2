@@ -34,3 +34,17 @@ const liCountStop = setInterval(() => {
         clearInterval(liCountStop);
     }
 }, 2000);
+
+// setInterval
+
+const word = "Patrik&Thea💝";
+let count = 1;
+function logMyWord() {
+    if (count === 5) {
+        clearInterval(wordCount);
+    }
+    console.log(count + " " + word);
+    count++;
+}
+
+let wordCount = setInterval(logMyWord, 2000);
