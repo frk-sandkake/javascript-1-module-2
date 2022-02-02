@@ -70,3 +70,5 @@ for (let i = 0; i < dataAnimal.length; i++) {
 function hoverDataAnimal(event) {
     console.log(event.target.dataset.animal);
 }
+
+// extends
