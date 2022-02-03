@@ -77,5 +77,4 @@ function updateDivAfterTwoSeconds() {
     containerDiv.innerHTML = "Hello I'm updated";
 }
 
-setTimeout(function () {
-}, 2000);
+let update = setTimeout(updateDivAfterTwoSeconds, 2000);
