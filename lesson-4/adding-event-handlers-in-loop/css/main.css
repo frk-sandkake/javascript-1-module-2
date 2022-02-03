@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.container div {
+  width: 50px;
+  font-family: Georgia;
+  font-size: 20px;
+  background-color: rgba(159, 202, 238, 0.918);
+  color: rgb(9, 63, 11);
+  padding: 24px;
+  margin: 8px;
+  border: 2px solid rgb(9, 38, 165);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgb(12, 12, 20);
+}
